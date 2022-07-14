@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <questions>
-  <question minutes="5" points="3">
+  <question minutes="2" points="2">
     <text>Какой национальный вид спорта Канады?</text>
     <variants>
       <variant>Хоккей</variant>
@@ -10,7 +10,7 @@
       <variant>Лыжи</variant>
     </variants>
   </question>
-  <question minutes="5" points="3">
+  <question minutes="1" points="1">
     <text>В какой стране были проведены первые Олимпийские игры?</text>
     <variants>
       <variant right="true">Греция</variant>
@@ -19,7 +19,7 @@
       <variant>ФРГ</variant>
     </variants>
   </question>
-  <question minutes="5" points="3">
+  <question minutes="1" points="1">
     <text>Какая единственная страна принимала участие во всех чемпионатах мира по футболу?</text>
     <variants>
       <variant right="true">Бразилия</variant>
@@ -28,13 +28,40 @@
       <variant>Англия</variant>
     </variants>
   </question>
-  <question minutes="5" points="3">
+  <question minutes="2" points="2">
     <text>Какая планета находится ближе всего к Солнцу?</text>
     <variants>
       <variant right="true">Меркурий</variant>
       <variant>Юпитер</variant>
       <variant>Земля</variant>
       <variant>Марс</variant>
+    </variants>
+  </question>
+  <question minutes="1" points="2">
+    <text>Сколько игроков в команде по водному поло?</text>
+    <variants>
+      <variant>5</variant>
+      <variant>6</variant>
+      <variant right="true">7</variant>
+      <variant>8</variant>
+    </variants>
+  </question>
+  <question minutes="2" points="4">
+    <text>Кто из художников создал «Суповые банки Кэмпбелла» в 1962 году?</text>
+    <variants>
+      <variant>Клод Моне</variant>
+      <variant>Дэмиен Херст</variant>
+      <variant>Рембрандт ван Рейн</variant>
+      <variant right="true">Энди Уорхол</variant>
+    </variants>
+  </question>
+  <question minutes="1" points="1">
+    <text>Какой актер выиграл лучшего актера Оскара за фильмы «Филадельфия» (1993) и «Форрест Гамп» (1994)?</text>
+    <variants>
+      <variant right="true">Том Хэнкс</variant>
+      <variant>Сильвестер Сталоне</variant>
+      <variant>Аль Пачино</variant>
+      <variant>Саша Белый</variant>
     </variants>
   </question>
 </questions>
