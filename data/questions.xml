@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+  <question minutes="5" points="3">
+    <text>Какой национальный вид спорта Канады?</text>
+    <variants>
+      <variant>Хоккей</variant>
+      <variant>Регби</variant>
+      <variant right="true">Лакросс</variant>
+      <variant>Лыжи</variant>
+    </variants>
+  </question>
+  <question minutes="5" points="3">
+    <text>В какой стране были проведены первые Олимпийские игры?</text>
+    <variants>
+      <variant right="true">Греция</variant>
+      <variant>Америка</variant>
+      <variant>Япония</variant>
+      <variant>ФРГ</variant>
+    </variants>
+  </question>
+  <question minutes="5" points="3">
+    <text>Какая единственная страна принимала участие во всех чемпионатах мира по футболу?</text>
+    <variants>
+      <variant right="true">Бразилия</variant>
+      <variant>Аргентина</variant>
+      <variant>Франция</variant>
+      <variant>Англия</variant>
+    </variants>
+  </question>
+  <question minutes="5" points="3">
+    <text>Какая планета находится ближе всего к Солнцу?</text>
+    <variants>
+      <variant right="true">Меркурий</variant>
+      <variant>Юпитер</variant>
+      <variant>Земля</variant>
+      <variant>Марс</variant>
+    </variants>
+  </question>
+</questions>
+
