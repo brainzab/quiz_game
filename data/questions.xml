@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <questions>
-  <question seconds="20" points="2">
+  <question seconds="10" points="3">
     <text>Какой национальный вид спорта Канады?</text>
     <variants>
       <variant>Хоккей</variant>
@@ -10,7 +10,7 @@
       <variant>Лыжи</variant>
     </variants>
   </question>
-  <question seconds="20" points="1">
+  <question seconds="7" points="1">
     <text>В какой стране были проведены первые Олимпийские игры?</text>
     <variants>
       <variant right="true">Греция</variant>
@@ -19,7 +19,7 @@
       <variant>ФРГ</variant>
     </variants>
   </question>
-  <question seconds="20" points="1">
+  <question seconds="10" points="1">
     <text>Какая единственная страна принимала участие во всех чемпионатах мира по футболу?</text>
     <variants>
       <variant right="true">Бразилия</variant>
@@ -28,7 +28,7 @@
       <variant>Англия</variant>
     </variants>
   </question>
-  <question seconds="20" points="2">
+  <question seconds="10" points="3">
     <text>Какая планета находится ближе всего к Солнцу?</text>
     <variants>
       <variant right="true">Меркурий</variant>
@@ -37,7 +37,7 @@
       <variant>Марс</variant>
     </variants>
   </question>
-  <question seconds="30" points="2">
+  <question seconds="13" points="2">
     <text>Сколько игроков в команде по водному поло?</text>
     <variants>
       <variant>5</variant>
@@ -46,7 +46,7 @@
       <variant>8</variant>
     </variants>
   </question>
-  <question seconds="30" points="4">
+  <question seconds="15" points="4">
     <text>Кто из художников создал «Суповые банки Кэмпбелла» в 1962 году?</text>
     <variants>
       <variant>Клод Моне</variant>
@@ -55,13 +55,22 @@
       <variant right="true">Энди Уорхол</variant>
     </variants>
   </question>
-  <question seconds="20" points="1">
+  <question seconds="10" points="1">
     <text>Какой актер выиграл лучшего актера Оскара за фильмы «Филадельфия» (1993) и «Форрест Гамп» (1994)?</text>
     <variants>
       <variant right="true">Том Хэнкс</variant>
       <variant>Сильвестер Сталоне</variant>
       <variant>Аль Пачино</variant>
       <variant>Саша Белый</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="1">
+    <text>2+2?</text>
+    <variants>
+      <variant right="true">4</variant>
+      <variant>22</variant>
+      <variant>3</variant>
+      <variant>6</variant>
     </variants>
   </question>
 </questions>

@@ -8,9 +8,4 @@ class Question
     @time_to_answer = time_to_answer
     @points = points
   end
-
-  def to_s
-    "#{@text} (время: #{@time_to_answer}c. баллов: #{@points} #{@time_to_answer})"
-  end
 end
-
