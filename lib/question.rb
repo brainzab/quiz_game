@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Question
   attr_reader :text, :variants, :right_answer, :time_to_answer, :points
 
