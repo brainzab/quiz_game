@@ -1,30 +1,37 @@
 # frozen_string_literal: true
 
-require_relative 'lib/game'
+require_relative 'lib/question_parser'
 require_relative 'lib/question'
+require_relative 'lib/game'
+require 'rexml/document'
+require 'timeout'
 
-file_path = "#{File.dirname(__FILE__)}/data/questions.xml"
+questions = QuestionParser.parse_xml("#{File.dirname(__FILE__)}/data/questions.xml")
 
-game = Game.new(file_path)
+game = Game.new
 
-game.questions.each do |que|
-  puts game.ask_question(que)
-  puts game.show_variants(que)
+questions.each do |que|
+  puts que.ask_question
+  puts que.show_variants
+  print '> '
   puts 'Введите ответ:'
 
   begin
-    user_input = Timeout.timeout(game.time_to_answer(que)) {
+    user_input = Timeout.timeout(game.time_to_answer(que)) do
       $stdin.gets.to_i
-    }
+    end
   rescue Timeout::Error
-    puts "Время вышло! Правильный ответ: #{game.show_right_answer(que)}"
+    puts "Время вышло! Правильный ответ: #{que.show_right_answer}"
     next
   end
 
-  game.answer_right?(user_input, que)
-
+  if que.answer_right?(user_input)
+    puts 'Правильно!'
+    game.total_points_count(que)
+    game.right_answers_count
+  else
+    puts "Не правильно! Правильный ответ: #{que.show_right_answer}"
+  end
 end
 
-puts game.game_result
-
-
+puts game.result
