@@ -28,4 +28,3 @@ class Game
     question.time_to_answer
   end
 end
-

@@ -12,7 +12,11 @@ class QuestionParser
       correct_answer = item.elements['variants'].elements.detect { |item| item.attributes['right'] == 'true' }.text
       points = item.attributes['points'].to_i
       time_to_answer = item.attributes['seconds'].to_i
-      Question.new(text, variants, correct_answer, time_to_answer, points)
+      Question.new(text: text,
+                   variants: variants,
+                   right_answer: correct_answer,
+                   time_to_answer: time_to_answer,
+                   points: points)
     end.sample(QUESTIONS_TO_PLAY)
   end
 end

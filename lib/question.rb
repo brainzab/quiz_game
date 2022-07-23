@@ -3,12 +3,12 @@
 class Question
   attr_accessor :text, :variants, :right_answer, :time_to_answer, :points
 
-  def initialize(text, variants, right_answer, time_to_answer, points)
-    @text = text
-    @variants = variants.shuffle
-    @right_answer = right_answer
-    @time_to_answer = time_to_answer
-    @points = points
+  def initialize(params)
+    @text = params[:text]
+    @variants = params[:variants].shuffle!
+    @right_answer = params[:right_answer]
+    @time_to_answer = params[:time_to_answer]
+    @points = params[:points]
   end
 
   def show_variants
@@ -27,4 +27,3 @@ class Question
     right_answer
   end
 end
-
